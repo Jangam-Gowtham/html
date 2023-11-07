@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Academy</title>
+    <link rel="icon" href="taplogo2.png">
+    <style>
+        .contact-bar {
+    background-color: #f0f0f0; /* Gray background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section img {
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+.middle-section {
+    flex: 1; /* Takes up available space in the middle */
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.right-section a {
+    margin-right: 10px; /* Add some spacing between the icons and email address */
+    text-decoration: none;
+}
+.nav-bar {
+    background-color: #fff; /* White background color */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add left and right padding */
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000; /* Text color */
+}
+
+#course {
+    margin-left: 5px; /* Add some spacing between the "Course" label and the dropdown */
+}
+
+button {
+    background-color: #fff;
+    color: #003366; /* Blue text color */
+    padding: 10px 20px;
+    border: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #003366; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+.content-bar {
+    background-color: #003366; /* Background color for the entire division */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white; /* Text color for the division */
+}
+
+.left-content {
+    flex: 2;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #55C498; /* Light green color for the title */
+}
+
+.description {
+    font-size: 36px; /* Increase font size for the description */
+    font-weight: bold; /* Apply a bold font weight */
+    font-family: Arial, sans-serif; /* Specify a different font-family */
+    margin-top: 10px; /* Add some spacing at the top */
+}
+
+.demo-button {
+    background-color: #0099cc; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px; /* Add spacing at the top */
+}
+
+.demo-button:hover {
+    background-color: #006699; /* Change button background color on hover */
+}
+
+.watch-demo-text {
+    color: white;
+}
+
+
+
+/* Rest of your CSS */
+
+
+.right-content {
+    flex: 1; /* Right section takes up less space */
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+.division4 {
+    background-color: #FFF; /* Background color for the 4th division */
+    padding: 20px;
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white; /* White background for the outer circle */
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.circle:hover {
+    background-color: grey; /* Grey background on hover */
+}
+
+.inner-circle {
+    width: 60px;
+    height: 60px;
+    background-color: grey; /* Grey background for the inner circle */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #003366;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.inner-circle img {
+    max-width: 100%; /* Ensure the image fits within the inner circle */
+    max-height: 100%; /* Ensure the image fits within the inner circle */
+}
+
+.division5 {
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+    color:#003366;
+}
+
+.ar-text {
+    color: brown;
+    transition: color 0.3s;
+}
+
+.ar-text:hover {
+    color: black;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+iframe {
+    margin: 10px;
+}
+/* Previous CSS rules for the 5th division remain unchanged */
+
+.numbers-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.number {
+    text-align: center;
+}
+
+.value {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+
+h3 {
+    color: #55C498; /* Light green color for h3 text */
+}
+.division6 {
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.left-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workshop {
+    font-size: 20px;
+    color: #55C498; /* Light green color */
+    margin-bottom: 10px;
+}
+
+.bootcamp {
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Apply a bold font weight */
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif; /* Specify a different font-family */
+}
+
+.register {
+    margin-bottom: 10px;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.reserve-button {
+    background-color: #0066ff; /* Updated to blue color (#0066ff) */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.division7 {
+            background-color: #f0f0f0; /* Very light grey background color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .italic-text {
+            color: brown; /* Brown color for the italic text */
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .italic-text:hover {
+            color: black; /* Change text color on hover to black */
+        }
+
+        .image-container {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px; /* Add space to the container */
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-row img {
+            width: 100%; /* Set the width to control the gap between images */
+            margin: 0 10px; /* Add small gap between images */
+        }
+
+        .division8 {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.centered-text {
+    font-size: 24px;
+    color: #003366; /* Dark blue color for the title */
+}
+
+.italic-text {
+    color: brown; /* Brown color for the italic text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.italic-text:hover {
+    color: black; /* Change text color on hover to black */
+}
+
+.division-9 {
+  text-align: center;
+}
+
+.division-9 h2 {
+  color: #003366;
+}
+
+.space {
+  height: 20px; /* Adjust the height as needed for the desired space */
+}
+
+/* Center the images */
+img {
+  display: block;
+  margin: 0 auto;
+}
+.division10 {
+  background-color: #003366;
+  padding: 10px;
+  text-align: center;
+}
+
+.division10 h2 {
+  color: #777;
+  font-size: 24px;
+  font-family: 'Your Preferred Font';
+}
+
+.white-text {
+  color: white;
+}
+
+.corporate-program {
+  color: brown;
+  font-style: normal;
+  transition: color 0.3s;
+}
+
+.corporate-program:hover {
+  color: black;
+  font-style: italic;
+}
+
+/* Existing CSS styles... */
+
+/* Existing CSS styles... */
+
+/* CSS for the white box */
+.white-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    clear: both; /* Ensure the box clears both left and right elements */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        <div class="left-section">
+            <img src="call.png" alt="Call Icon" height="20" width="20">
+            <span>08069878321</span>
+        </div>
+        <div class="middle-section"></div>
+        <div class="right-section">
+            <a href="https://mail.google.com/mail/u/0/#drafts?compose=VpCqJZNPpZQbzwwMNmSSWWZhPqtgvgBhTXvQGKNgVGHBtXFTGxZRGWHxWcxksTVDRLXnXCl" target="_blank">
+                <img src="email.png" alt="Email Icon" height="20" width="20">
+                <span>jangam17020020@gmail.com</span>
+            </a>
+            
+            <a href="https://www.youtube.com/tapacademy" target="_blank">
+                <img src="youtube.png" alt="YouTube Icon" height="20" width="20">
+            </a>
+            <a href="https://www.instagram.com/tapacademy_online/" target="_blank">
+                <img src="instagram.png" alt="Instagram Icon" height="20" width="20">
+            </a>
+        </div>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-items">
+            <a href="https://thetapacademy.com">
+                <img src="taplogo3.jpg" alt="Tap Academy Logo" height="50" width="120">
+            </a>
+            <a href="https://thetapacademy.com/">Home</a>
+            <a href="courses.html">
+                <label for="course">Course</label>
+                <select id="course">
+                    <option value="Full Stack Web Development">Full Stack Web Development</option>
+                    <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+                    <option value="Bootcamp">Bootcamp</option>
+                </select>
+            </a>
+            <a href="student review.html" target="_blank">Student Reviews</a>
+            <a href="https://thetapacademy.com/blogs/">Blogs</a>
+            <a href="https://thetapacademy.com/placements/">Placements</a>
+            <a href="https://thetapacademy.com/contact-us/">Contact Us</a>
+            <a href="https://learn.thetapacademy.com/"><button type="button">Try For Free</button></a>
+        </div>
+    </div>
+    <div class="content-bar">
+    <div class="left-content">
+        <div class="title">#TechTraining</div>
+        <h3>#TechTraining</h3>
+        <h1 class="description;">Gamify learning Simplify Employment</h1>
+        <pre style="font-family: sans-serif; font-size: 16px;">TAP Academy is an One-Stop Destination to upskill 
+your coding skills or reskill yourself. More than 
+35,000+ students trust us all over India.</pre>
+        <button class="demo-button" type="button">Attend a Free Demo</button>
+        <a href="play.html">
+            <img src="play-button.png" alt="Play Button" height="20" width="20">
+            <span class="watch-demo-text">Watch Demo Video</span>
+        </a>
+    </div>
+    <div class="right-content">
+        <video src="Tap Academy Video.mp4" controls height="200" width="400"></video>
+    </div>
+</div>
+
+<div class="division4">
+    <div class="box-container">
+        <div class="box">
+            <div class="circle">
+                <div class="inner-circle">
+                    <img src="tablet-and-laptop.png" alt="Image 1">
+                </div>
+            </div>
+            <div class="content">
+                <p class="title">Personalized Course Curriculum</p>
+                <p>We offer individual attention to choose the right course for your career.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="circle">
+                <div class="inner-circle">
+                    <img src="suitcase.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="content">
+                <p class="title">Placement Opportunity</p>
+                <p>Getting unlimited placement opportunities till you get placed.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="circle">
+                <div class="inner-circle">
+                    <img src="support.png" alt="Image 3">
+                </div>
+            </div>
+            <div class="content">
+                <p class="title">1 : 1 Mentorship</p>
+                <p>Our pool of mentors ensure your every doubt is addressed immediately.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="division5">
+    <h1 style="text-align: center;">Experience the <i class="ar-text">Augmented Reality</i> Tech Training</h1>
+    <p>One of the unique features of Tap Academy is the use of Augmented Reality in our training. Through this concept, 
+        visualized using cutting-edge animation to ensure an in-depth understanding of the concepts & experience the pure joy of 
+        learning as well as upskilling your coding skills.</p>
+    
+    <div class="video-container">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/694365015?h=ab68c6377f" width="620" height="350" frameborder="0" allowfullscreen></iframe>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/636154101?h=89dff778c4" width="620" height="350" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="video-container">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/638183143?h=33bbbfd0ed" width="620" height="350" frameborder="0" allowfullscreen></iframe>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/682703363?h=78aa9762ff" width="620" height="350" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="numbers-container">
+        <div class="number">
+            <div class="value">35,000+</div>
+            <div class="description">Students Trained</div>
+        </div>
+        <div class="number">
+            <div class="value">600+</div>
+            <div class="description">Workshops Conducted</div>
+        </div>
+        <div class="number">
+            <div class="value">1,000+</div>
+            <div class="description">Placement Drives</div>
+        </div>
+    </div>
+</div>
+<div class="division6">
+    <div class="left-content">
+        <p class="workshop">Live Workshop</p>
+        <p class="bootcamp">Attend Live Coding Bootcamp</p>
+        <p class="register">Register Now to attend coding Bootcamp on Full Stack Development & get 2 Placement Drives</p>
+    </div>
+    <div class="right-content">
+        <a href="#" class="reserve-button">Reserve My Seat</a>
+    </div>
+</div>
+<div class="division7">
+    <h1 class="transformation">Tap Academy Students <i class="italic-text">Transformation</i></h1>
+    <p font-size: 24px;>Our complete online training has made students learn to code anytime anywhere, enhance their coding skills & get placed in various Companies. Here are our few students placed at various companies:</p>
+    <div class="image-container">
+        <div class="image-row">
+            <img src="Screenshot (289).png" alt="Image 1">
+        </div>
+        <div class="image-row">
+            <img src="Screenshot (291).png" alt="Image 2">
+        </div>
+    </div>
+</div>
+<div class="division8">
+    <h1 class="centered-text">Our <i class="italic-text">Students</i> Placed in</h1>
+    <p>Tap Academy presents Unlimited Job guarantee Placements for every student who enrolls. More than 11,000+ students have got exposure to AR Tech Training. Explore our Courses to know more.</p>
+    <img src="company.png" alt="Centered Image">
+</div>
+<div class="division-9">
+    <h2>Recognized by International Bodies & Govt. Of India</h2>
+    <img src="iso.png" alt="ISO Logo">
+  </div>
+  <div class="division10">
+    <h2>Upskill Your Coding Skills</h2>
+    <p><span class="white-text">Campus to</span> <span class="corporate-program">Corporate Program</span></p>
+    <p class="white-text">
+      Tap Academy is a skilling organization that trains students to sync with current IT needs. Our Specialized Job Guarantee Courses transform from campus students to corporate employees by enhancing their coding skills.
+    </p>
+    
+    <!-- Added white box below the specific content -->
+    <div class="white-box">
+        <!-- Your content will go here -->
+        <!-- 2nd Subdivision -->
+<div class="subdivision">
+    <p>Full Stack Development Course <span class="course-text">Course</span></p>
+    <p style="color: #003366;">Tap Academy offers 90 days Intensive certification training program exclusively for Final year Students & Tech Graduates</p>
+    <p style="color: #003366;">3248 Students</p>
+    <p><span class="stars"></span></p>
+    <p style="color: #003366;">A Full-stack developer is a person who has great knowledge of the latest and upcoming trends of web development with complete knowledge of front-end and back-end web development.</p>
+    <p style="color: #003366;">According to the research, there is a 20% growth in demand for Full-stack developer compared to the last couple of years.</p>
+    <p style="color: #003366;">Full-stack developer are the experts with diverse knowledge and skill set. So the Pay are in High & decent salary structure</p>
+    <p style="color: #003366;">IT Industry is looking for skilled candidates who can work efficiently with latest tech (Full stack) and solve complex problems</p>
+</div>
+
+    </div>
+</div>
+
+
+  
+  
+
+
+
+    
+</body>
+
+
+
+</html>
